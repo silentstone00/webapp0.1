@@ -2,16 +2,19 @@
 <html>
   <head>
     <title>
-      webapp
+      webapp  
     </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
       h1 {
+        margin:15px 0px 0px 0px;
         font-size:35px;
         font-family: Monaco;
         text-align:center;
       }
       h2{
         font-family: Monaco;
+        font-size:23px;
       }
       h3{
         font-size:23px;
@@ -22,7 +25,7 @@
       #banner{
         width:25%;
         height:200px;
-        margin:0px 15px 0px 0px;
+        margin:20px 15px 0px 80px;
         object-fit:cover;
         float: left;
         border-radius: 20px;
@@ -48,8 +51,8 @@
         hello there welcome to this webapp!!
       </h1>
       <img id="banner" src="https://b6fa096d-ca77-4012-ace6-4f0a8371909a-00-el4c91xdnd5b.pike.replit.dev/static/car.jpg" height="300px">
-    </body>
-  <div>
+    
+  <div class="container">
   <h2>ABOUT</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas integer eget aliquet nibh praesent tristique magna sit. Lorem ipsum dolor sit amet consectetur adipiscing elit. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Sagittis purus sit amet volutpat consequat. Morbi tristique senectus et netus et malesuada. Blandit massa enim nec dui nunc. Lectus nulla at volutpat diam ut venenatis tellus in metus. Leo vel fringilla est ullamcorper eget nulla.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -59,6 +62,16 @@
     <p class="space">
       Eget felis eget nunc lobortis. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. At varius vel pharetra vel turpis nunc eget. Diam quis enim lobortis scelerisque fermentum. Mus mauris vitae ultricies leo integer malesuada. Pretium nibh ipsum consequat nisl vel pretium lectus quam. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Semper quis lectus nulla at volutpat diam ut venenatis. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Nisi lacus sed viverra tellus in hac. Morbi tristique senectus et netus et malesuada fames ac turpis. Pellentesque sit amet porttitor eget dolor morbi non arcu risus. Libero enim sed faucibus turpis in eu mi. Aliquet bibendum enim facilisis gravida.
     </p>
+    <div>
+    <p>
+      {% for job in jobs %}
+     {% include 'jobitem.html' %}
+      {% endfor %}
+    </p>
+      </div>
+    <button class="btn btn-primary btn-lg";>
+      contact us
+    </button>
     </div>
+      </body>
 </html>
-  
