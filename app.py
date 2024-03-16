@@ -4,24 +4,24 @@ app = Flask(__name__)
 
 JOBS = [
   {'id':1,
-  'title':'data analyst',
+  'title':'Data Analyst',
   'location':'Bengaluru,India',
-'salary':'RS 1000000'},
+'salary':'RS 100000'},
 
 {'id':2,
-  'title':'frontend developer',
+  'title':'Frontend Developer',
   'location':'Bengaluru,India',
-'salary':'RS 1000000'},
+'salary':'RS 100600'},
 
 {'id':3,
-  'title':'backend developer',
-  'location':'Bengaluru,India',
-'salary':'RS 1000000'},
+  'title':'Backend Developer',
+  'location':'Chennai,India',
+'salary':'RS 60000'},
 
 {'id':4,
-  'title':' machine learnig',
-  'location':'Bengaluru,India',
-'salary':'RS 1000000'}
+  'title':' Machine Learnig',
+  'location':'Delhi,India',
+'salary':'RS 780000'}
 
 
 ]
